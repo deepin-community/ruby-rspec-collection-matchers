@@ -1,0 +1,42 @@
+ruby-rspec-collection-matchers (1.2.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/copyright (Format): Fix insecure-copyright-format-uri.
+  * d/patches/0001-Remove-git-from-gemspec.patch: Add patch.
+    - Remove git from gemspec.
+  * d/patches/series: Add new patch.
+
+ -- Daniel Leidert <dleidert@debian.org>  Sat, 22 Feb 2020 01:38:36 +0100
+
+ruby-rspec-collection-matchers (1.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Cédric Boutillier ]
+  * Use https:// in Vcs-* fields
+  * Run wrap-and-sort on packaging files
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Antonio Terceiro ]
+  * New upstream version 1.2.0
+  * Refresh packaging with a new dh-make-ruby run
+    - Bump debhelper compat to 12 via debhelper-compat (= 12), drop
+      debian/compat
+    - Bump Standards-Version to 4.5.0; no changes needed
+    - Point Vcs-* to salsa.debian.org
+    - add Rules-Requires-Root: no
+    - Drop hardcoded dependencies and rely on ${ruby:Depends}
+    - drop old boilerplate comments from debian/rules
+    - Install using the rubygems layout
+    - add debian/upstream/metadata
+    - Point debian/watch to gemwatch.debian.net
+
+ -- Antonio Terceiro <terceiro@debian.org>  Sat, 08 Feb 2020 19:19:04 +0100
+
+ruby-rspec-collection-matchers (1.1.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #796086)
+
+ -- Jonas Genannt <genannt@debian.org>  Wed, 19 Aug 2015 13:10:11 +0200

@@ -1,0 +1,30 @@
+Source: ruby-rspec-collection-matchers
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Jonas Genannt <genannt@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb (>= 1),
+               rake,
+               ruby-activemodel,
+               ruby-rspec,
+               ruby-rspec-expectations (>= 3)
+Standards-Version: 4.5.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-rspec-collection-matchers.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-rspec-collection-matchers
+Homepage: https://github.com/rspec/rspec-collection_matchers
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-rspec-collection-matchers
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: Ruby RSpec CollectionMatchers
+ Ruby Rspec is a Behaviour Driven Development framework for Ruby. It
+ provides a framework for Ruby.
+ RSpec Collection Matchers is a RSpec addon for collection cardinality matchers,
+ extracted from rspec-expectations.
